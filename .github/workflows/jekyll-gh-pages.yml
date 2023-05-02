@@ -35,8 +35,16 @@ jobs:
         with:
           source: ./
           destination: ./_site
+      - name: Copy additional folders
+        run: |
+            cp -r Setting\ up\ a\ cloud\ solution\ environment/ _site/
+            cp -r Planning\ and\ configuring\ a\ cloud\ solution/ _site/
+            cp -r Deploying\ and\ implementing\ a\ cloud\ solution/ _site/
+            cp -r Ensuring\ successful\ operation\ of\ a\ cloud\ solution/ _site/
+            cp -r Configuring\ access\ and\ security/ _site/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
+
 
   # Deployment job
   deploy:
@@ -49,14 +57,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
-        directory: |
-          ./Setting up a cloud solution environment
-          ./Planning and configuring a cloud solution
-          ./Deploying and implementing a cloud solution
-          ./Ensuring successful operation of a cloud solution
-          ./Configuring access and security
-        exclude: |
-          .git
-          .github
-          README.md
-

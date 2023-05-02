@@ -33,7 +33,7 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./Configuring_access_and_security/Managing_identity_and_access_management_IAM/.
+          source: Configuring_access_and_security/Managing_identity_and_access_management_IAM/.
           destination: ./_site
       - name: Copy additional folders
         run: |

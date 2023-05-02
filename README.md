@@ -23,6 +23,7 @@ The exam covers the following topics:
 - Managing identity and access management (IAM)
 - Managing service accounts
 - Viewing audit logs
+
 more...............
 
 For each topic, this guide provides a brief overview of the tasks involved and relevant resources to help you prepare.
@@ -32,11 +33,11 @@ For each topic, this guide provides a brief overview of the tasks involved and r
 The following resources are recommended to help you prepare for the exam:
 
 - Google Cloud Certified - Associate Cloud Engineer[https://cloud.google.com/learn/certification/cloud-engineer] - Official exam page with information about the exam format, registration, and policies
-- Associate Cloud Engineer Exam Guide - Detailed exam guide with information about the topics covered in the exam and sample questions
-- Cloud Academy GCP Associate Cloud Engineer Course - Comprehensive course that covers all the exam topics with hands-on labs and quizzes
-- Coursera Google Cloud Platform Fundamentals: Core Infrastructure - Free course that provides an introduction to GCP infrastructure and services
-- Qwiklabs - Hands-on labs that allow you to practice using GCP services and infrastructure
-- GCP Documentation - Official documentation for GCP services and infrastructure
+- Associate Cloud Engineer Exam Guide[https://cloud.google.com/learn/certification/guides/cloud-engineer] - Detailed exam guide with information about the topics covered in the exam and sample questions
+- Cloud Academy GCP Associate Cloud Engineer Course[https://cloudacademy.com/learning-paths/gcp-associate-cloud-engineer-certification-28/] - Comprehensive course that covers all the exam topics with hands-on labs and quizzes
+- Coursera Google Cloud Platform Fundamentals: Core Infrastructure[https://www.coursera.org/learn/gcp-fundamentals] - Free course that provides an introduction to GCP infrastructure and services
+- Qwiklabs[https://www.qwiklabs.com/] - Hands-on labs that allow you to practice using GCP services and infrastructure
+- GCP Documentation[https://cloud.google.com/docs] - Official documentation for GCP services and infrastructure
 
 ## Sample Questions
 

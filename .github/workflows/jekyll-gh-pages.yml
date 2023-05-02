@@ -45,10 +45,10 @@ jobs:
 #      - name: Upload artifact
 #        uses: actions/upload-pages-artifact@v1
       - name: Upload artifact
-        uses: actions/upload-artifact@v1
-#        with:
-#          name: site
-#          path: _site/
+        uses: actions/upload-pages-artifact@v1
+        with:
+          name: site
+          path: _site/
 
 
 

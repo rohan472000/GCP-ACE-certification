@@ -49,4 +49,4 @@ Contributions to this guide are welcome! If you have any suggestions or correcti
 
 ## Disclaimer
 
-This guide is not affiliated with or endorsed by Google. All trademarks and registered trademarks are the property of @rohan472000(Rohan Anand).
+This guide is not affiliated with or endorsed by Google. All trademarks and registered trademarks are the property of **@rohan472000(Rohan Anand)**.

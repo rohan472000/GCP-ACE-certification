@@ -37,11 +37,11 @@ jobs:
           destination: ./_site
       - name: Copy additional folders
         run: |
-            cp -r Setting\ up\ a\ cloud\ solution\ environment/ _site/
-            cp -r Planning\ and\ configuring\ a\ cloud\ solution/ _site/
-            cp -r Deploying\ and\ implementing\ a\ cloud\ solution/ _site/
-            cp -r Ensuring\ successful\ operation\ of\ a\ cloud\ solution/ _site/
-            cp -r Configuring\ access\ and\ security/ _site/
+            cp -r Setting_up_cloud_solution_environment/ _site/
+            cp -r Planning_configuring_a_cloud_solution/ _site/
+            cp -r Deploying_implementing_cloud_solution/ _site/
+            cp -r Ensuring_successful_operation_of_a_cloud_solution/ _site/
+            cp -r Configuring_access_and_security/ _site/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
 

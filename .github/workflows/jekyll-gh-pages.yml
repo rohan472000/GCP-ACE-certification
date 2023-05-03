@@ -33,24 +33,10 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./
+          source: ././
           destination: ./_site
-#      - name: Copy additional folders
-#        run: |
-#            sudo cp -r Setting_up_cloud_solution_environment/ _site/
-#            sudo cp -r Planning_configuring_a_cloud_solution/ _site/
-#            sudo cp -r Deploying_implementing_cloud_solution/ _site/
-#            sudo cp -r Ensuring_successful_operation_of_a_cloud_solution/ _site/
-#            sudo cp -r Configuring_access_and_security/ _site/
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
-##      - name: Upload artifact
-##        uses: actions/upload-pages-artifact@v1
-##        with:
-##          name: site
-##          path: _site/
-
-
 
   # Deployment job
   deploy:

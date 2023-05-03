@@ -21,20 +21,20 @@ concurrency:
   group: "pages"
   cancel-in-progress: false
 
-#jobs:
-#  # Build job
-#  build:
-#    runs-on: ubuntu-latest
-#    steps:
-#      - name: Checkout
-#        uses: actions/checkout@v3
-#      - name: Setup Pages
-#        uses: actions/configure-pages@v3
-#      - name: Build with Jekyll
-#        uses: actions/jekyll-build-pages@v1
-#        with:
-#          source: Configuring_access_and_security/Managing_identity_and_access_management_IAM/.
-#          destination: ./_site
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: Configuring_access_and_security/Managing_identity_and_access_management_IAM/.
+          destination: ./_site
 #      - name: Copy additional folders
 #        run: |
 #            sudo cp -r Setting_up_cloud_solution_environment/ _site/
@@ -42,36 +42,14 @@ concurrency:
 #            sudo cp -r Deploying_implementing_cloud_solution/ _site/
 #            sudo cp -r Ensuring_successful_operation_of_a_cloud_solution/ _site/
 #            sudo cp -r Configuring_access_and_security/ _site/
-#      - name: Upload artifact
-#        uses: actions/upload-pages-artifact@v1
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
 ##      - name: Upload artifact
 ##        uses: actions/upload-pages-artifact@v1
 ##        with:
 ##          name: site
 ##          path: _site/
-#
-jobs:
-# Build job
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: . # root directory where the different directories are located
-          destination: ./_site
-      - name: Copy .md files to _site folder
-        run: |
-          find . -type f -name '*.md' -execdir cp --parents {} ../_site/ \;
-      - name: Upload artifact
-        uses: actions/upload-artifact@v1
-        with:
-          name: site
-          path: _site/
+
 
 
   # Deployment job

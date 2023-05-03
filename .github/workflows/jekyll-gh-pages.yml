@@ -67,7 +67,7 @@ jobs:
       - name: Copy .md files to _site folder
         run: |
           find . -type f -name '*.md' -execdir cp --parents {} ../_site/ \;
-      - name: Upload artifact
+      - name: github-pages
         uses: actions/upload-artifact@v2
         with:
           name: site
@@ -77,7 +77,7 @@ jobs:
   # Deployment job
   deploy:
     environment:
-      name: site #github-pages
+      name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build

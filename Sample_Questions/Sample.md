@@ -332,4 +332,64 @@ What should you do?
   Add the group to the role.
 
 
-40. 
+40. You create a new Google Kubernetes Engine (GKE) cluster and want to make sure that it always runs a supported and 
+    stable version of Kubernetes. What should you do?
+
+- Enable the Node Auto-Repair feature for your GKE cluster.
+
+- Enable the Node Auto-Upgrades feature for your GKE cluster. **_Most Voted_**
+
+- Select the latest available cluster version for your GKE cluster.
+
+- Select ג€Container-Optimized OS (cos)ג€ as a node image for your GKE cluster.
+
+
+41. You have an instance group that you want to load balance. You want the load balancer to terminate the client SSL 
+    session. The instance group is used to serve a public web application over HTTPS. You want to follow 
+    Google-recommended practices. What should you do?
+
+- Configure an HTTP(S) load balancer. **_Most Voted_**
+
+- Configure an internal TCP load balancer.
+
+- Configure an external SSL proxy load balancer.
+
+- Configure an external TCP proxy load balancer.
+
+
+42. You have 32 GB of data in a single file that you need to upload to a Nearline Storage bucket. The WAN connection you 
+    are using is rated at 1 Gbps, and you are the only one on the connection. You want to use as much of the rated 1 
+    Gbps as possible to transfer the file rapidly. How should you upload the file?
+
+- Use the GCP Console to transfer the file instead of gsutil.
+
+- Enable parallel composite uploads using gsutil on the file transfer. **_Most Voted_**
+
+- Decrease the TCP window size on the machine initiating the transfer.
+
+- Change the storage class of the bucket from Nearline to Multi-Regional.
+
+
+43. You've deployed a microservice called myapp1 to a Google Kubernetes Engine cluster using the YAML file specified below:
+    
+    ```
+    name: PASSWORD
+    values: "xcvfshhs"
+    ```
+
+    You need to refactor this configuration so that the database password is not stored in plain text. You want to follow 
+    Google-recommended practices. What should you do?
+
+- Store the database password inside the Docker image of the container, not in the YAML file.
+
+- Store the database password inside a Secret object. Modify the YAML file to populate the DB_PASSWORD environment 
+  variable from the Secret. _**Most Voted_**
+
+- Store the database password inside a ConfigMap object. Modify the YAML file to populate the DB_PASSWORD environment 
+  variable from the ConfigMap.
+
+- Store the database password in a file inside a Kubernetes persistent volume, and use a persistent volume claim to 
+  mount the volume to the container.
+ 
+
+44. 

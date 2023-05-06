@@ -146,8 +146,8 @@ B. Add the auditors group to two new custom IAM roles.
 C. Add the auditor user accounts to the 'logging.viewer' and 'bigQuery.dataViewer' predefined IAM roles.
 D. Add the auditor user accounts to two new custom IAM roles.
  
-26. You need to set up permissions for a set of Compute Engine instances to enable them to write data into a particular Cloud Storage bucket. You want to follow
-    Google-recommended practices. What should you do?
+26. You need to set up permissions for a set of Compute Engine instances to enable them to write data into a particular 
+    Cloud Storage bucket. You want to follow Google-recommended practices. What should you do?
 A. Create a service account with an access scope. Use the access scope 'https://www.googleapis.com/auth/devstorage.write_only'.
 B. Create a service account with an access scope. Use the access scope 'https://www.googleapis.com/auth/cloud-platform'.
 C. Create a service account and add it to the IAM role 'storage.objectCreator' for that bucket. **Most Voted**
@@ -176,15 +176,160 @@ D. Create a trace in Stackdriver to view the information.
 
 
 29. You have an object in a Cloud Storage bucket that you want to share with an external company. The object contains 
-    sensitive data. You want access to the content to be removed after four hours. The external company does not have a Google account to which you can grant specific user-based access privileges. You want to use the most secure method that requires the fewest steps. What should you do?
+    sensitive data. You want access to the content to be removed after four hours. The external company does not have a
+    Google account to which you can grant specific user-based access privileges. You want to use the most secure method 
+    that requires the fewest steps. What should you do?
 
 - Create a signed URL with a four-hour expiration and share the URL with the company. **_Most Voted_**
 
 - Set object access to 'public' and use object lifecycle management to remove the object after four hours.
 
-- Configure the storage bucket as a static website and furnish the object's URL to the company. Delete the object from the storage bucket after four hours.
+- Configure the storage bucket as a static website and furnish the object's URL to the company. Delete the object from 
+  the storage bucket after four hours.
 
-- Create a new Cloud Storage bucket specifically for the external company to access. Copy the object to that bucket. Delete the bucket after four hours have passed.
+- Create a new Cloud Storage bucket specifically for the external company to access. Copy the object to that bucket. 
+  Delete the bucket after four hours have passed.
 
 
-30. 
+30. You have an object in a Cloud Storage bucket that you want to share with an external company. The object contains 
+    sensitive data. You want access to the content to be removed after four hours. The external company does not have a
+    Google account to which you can grant specific user-based access privileges. You want to use the most secure method 
+    that requires the fewest steps. What should you do?
+
+- Create a signed URL with a four-hour expiration and share the URL with the company. **_Most Voted_**
+
+- Set object access to 'public' and use object lifecycle management to remove the object after four hours.
+
+- Configure the storage bucket as a static website and furnish the object's URL to the company. Delete the object from 
+  the storage bucket after four hours.
+
+- Create a new Cloud Storage bucket specifically for the external company to access. Copy the object to that bucket. 
+  Delete the bucket after four hours have passed.
+
+
+31. You are creating a Google Kubernetes Engine (GKE) cluster with a cluster autoscaler feature enabled. You need to 
+    make sure that each node of the cluster will run a monitoring pod that sends container metrics to a third-party 
+    monitoring solution. What should you do?
+
+- Deploy the monitoring pod in a StatefulSet object.
+
+- Deploy the monitoring pod in a DaemonSet object. **_Most Voted_**
+
+- Reference the monitoring pod in a Deployment object.
+
+- Reference the monitoring pod in a cluster initializer at the GKE cluster creation time.
+
+
+32. You want to send and consume Cloud Pub/Sub messages from your App Engine application. The Cloud Pub/Sub API is 
+    currently disabled. You will use a service account to authenticate your application to the API. You want to make 
+    sure your application can use Cloud Pub/Sub. What should you do?
+
+- Enable the Cloud Pub/Sub API in the API Library on the GCP Console. **_Most Voted_**
+
+- Rely on the automatic enablement of the Cloud Pub/Sub API when the Service Account accesses it.
+
+- Use Deployment Manager to deploy your application. Rely on the automatic enablement of all APIs used by the 
+  application being deployed.
+
+- Grant the App Engine Default service account the role of Cloud Pub/Sub Admin. Have your application enable the API on
+  the first connection to Cloud Pub/ Sub.
+
+
+33. You need to monitor resources that are distributed over different projects in Google Cloud Platform. You want to 
+    consolidate reporting under the same Stackdriver Monitoring dashboard. What should you do?
+
+- Use Shared VPC to connect all projects, and link Stackdriver to one of the projects.
+
+- For each project, create a Stackdriver account. In each project, create a service account for that project and grant
+  it the role of Stackdriver Account Editor in all other projects.
+
+- Configure a single Stackdriver account, and link all projects to the same account. _**Most Voted_**
+
+- Configure a single Stackdriver account for one of the projects. In Stackdriver, create a Group and add the other 
+  project names as criteria for that Group.
+
+
+34. You are deploying an application to a Compute Engine VM in a managed instance group. The application must be running
+    at all times, but only a single instance of the VM should run per GCP project. How should you configure the instance
+    group?
+
+- Set autoscaling to On, set the minimum number of instances to 1, and then set the maximum number of instances to 1. 
+   **_Most Voted_**
+
+- Set autoscaling to Off, set the minimum number of instances to 1, and then set the maximum number of instances to 1.
+
+- Set autoscaling to On, set the minimum number of instances to 1, and then set the maximum number of instances to 2.
+
+- Set autoscaling to Off, set the minimum number of instances to 1, and then set the maximum number of instances to 2.
+
+
+35. You want to verify the IAM users and roles assigned within a GCP project named my-project. What should you do?
+
+- Run gcloud iam roles list. Review the output section.
+
+- Run gcloud iam service-accounts list. Review the output section.
+
+- Navigate to the project and then to the IAM section in the GCP Console. Review the members and roles. **_Most Voted_**
+
+- Navigate to the project and then to the Roles section in the GCP Console. Review the roles and status.
+
+
+36. You need to create a new billing account and then link it with an existing Google Cloud Platform project. 
+What should you do?
+
+- Verify that you are Project Billing Manager for the GCP project. Update the existing project to link it to the 
+  existing billing account. 
+
+- Verify that you are Project Billing Manager for the GCP project. Create a new billing account and link the new billing 
+  account to the existing project. _**Most Voted_**
+
+- Verify that you are Billing Administrator for the billing account. Create a new project and link the new project to 
+  the existing billing account.
+
+- Verify that you are Billing Administrator for the billing account. Update the existing project to link it to the 
+  existing billing account.
+
+
+37. You have one project called proj-sa where you manage all your service accounts. You want to be able to use a 
+    service account from this project to take snapshots of VMs running in another project called proj-vm. What should 
+    you do?
+
+- Download the private key from the service account, and add it to each VMs custom metadata.
+
+- Download the private key from the service account, and add the private key to each VM's SSH keys.
+
+- Grant the service account the IAM Role of Compute Storage Admin in the project called proj-vm. **_Most Voted_**
+
+- When creating the VMs, set the service account's API scope for Compute Engine to read/write.
+
+
+38. You created a Google Cloud Platform project with an App Engine application inside the project. You initially 
+    configured the application to be served from the us- central region. Now you want the application to be served from 
+    the asia-northeast1 region. What should you do?
+
+- Change the default region property setting in the existing GCP project to asia-northeast1.
+
+- Change the region property setting in the existing App Engine application from us-central to asia-northeast1.
+
+- Create a second App Engine application in the existing GCP project and specify asia-northeast1 as the region to serve
+  your application.
+
+- Create a new GCP project and create an App Engine application inside this new project. Specify asia-northeast1 as the 
+  region to serve your application. **_Most Voted_**
+
+
+39. You need to grant access for three users so that they can view and edit table data on a Cloud Spanner instance. 
+    What should you do?
+
+- Run gcloud iam roles describe roles/spanner.databaseUser. Add the users to the role.
+
+- Run gcloud iam roles describe roles/spanner.databaseUser. Add the users to a new group. Add the group to the role. 
+  **_Most Voted_**
+
+- Run gcloud iam roles describe roles/spanner.viewer - -project my-project. Add the users to the role.
+
+- Run gcloud iam roles describe roles/spanner.viewer - -project my-project. Add the users to a new group. 
+  Add the group to the role.
+
+
+40. 

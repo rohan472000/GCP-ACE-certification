@@ -392,4 +392,75 @@ What should you do?
   mount the volume to the container.
  
 
-44. 
+44. You are running an application on multiple virtual machines within a managed instance group and have autoscaling 
+    enabled. The autoscaling policy is configured so that additional instances are added to the group if the CPU 
+    utilization of instances goes above 80%. VMs are added until the instance group reaches its maximum limit of five 
+    VMs or until CPU utilization of instances lowers to 80%. The initial delay for HTTP health checks against the 
+    instances is set to 30 seconds.
+    The virtual machine instances take around three minutes to become available for users. You observe that when the 
+    instance group autoscales, it adds more instances then necessary to support the levels of end-user traffic. You 
+    want to properly maintain instance group sizes when autoscaling. What should you do?
+
+- Set the maximum number of instances to 1.
+
+- Decrease the maximum number of instances to 3.
+
+- Use a TCP health check instead of an HTTP health check.
+
+- Increase the initial delay of the HTTP health check to 200 seconds. **_Most Voted_**
+
+
+45. You need to select and configure compute resources for a set of batch processing jobs. These jobs take around 2 
+    hours to complete and are run nightly. You want to minimize service costs. What should you do?
+
+- Select Google Kubernetes Engine. Use a single-node cluster with a small instance type.
+
+- Select Google Kubernetes Engine. Use a three-node cluster with micro instance types.
+
+- Select Compute Engine. Use preemptible VM instances of the appropriate standard machine type. **_Most Voted_**
+
+- Select Compute Engine. Use VM instance types that support micro bursting.
+
+
+46. You recently deployed a new version of an application to App Engine and then discovered a bug in the release. You 
+    need to immediately revert to the prior version of the application. What should you do?
+
+- Run gcloud app restore.
+
+- On the App Engine page of the GCP Console, select the application that needs to be reverted and click Revert.
+
+- On the App Engine Versions page of the GCP Console, route 100% of the traffic to the previous version. **_Most Voted_**
+
+- Deploy the original version as a separate application. Then go to App Engine settings and split traffic between 
+  applications so that the original version serves 100% of the requests.
+
+
+47. You deployed an App Engine application using gcloud app deploy, but it did not deploy to the intended project. 
+    You want to find out why this happened and where the application deployed. What should you do?
+
+- Check the app.yaml file for your application and check project settings.
+
+- Check the web-application.xml file for your application and check project settings.
+
+- Go to Deployment Manager and review settings for deployment of applications.
+
+- Go to Cloud Shell and run gcloud config list to review the Google Cloud configuration used for deployment. **_Most Voted_**
+
+
+48. You want to configure 10 Compute Engine instances for availability when maintenance occurs. Your requirements state
+    that these instances should attempt to automatically restart if they crash. Also, the instances should be highly 
+    available including during system maintenance. What should you do?
+
+- Create an instance template for the instances. Set the 'Automatic Restart' to on. Set the 'On-host maintenance' to 
+  Migrate VM instance. Add the instance template to an instance group. **_Most Voted_**
+
+- Create an instance template for the instances. Set 'Automatic Restart' to off. Set 'On-host maintenance' to Terminate 
+  VM instances. Add the instance template to an instance group.
+
+- Create an instance group for the instances. Set the 'Autohealing' health check to healthy (HTTP).
+
+- Create an instance group for the instance. Verify that the 'Advanced creation options' setting for 'do not retry 
+  machine creation' is set to off.
+
+
+49. 

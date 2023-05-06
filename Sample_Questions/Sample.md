@@ -463,4 +463,70 @@ What should you do?
   machine creation' is set to off.
 
 
-49. 
+49. You host a static website on Cloud Storage. Recently, you began to include links to PDF files on this site. 
+    Currently, when users click on the links to these PDF files, their browsers prompt them to save the file onto their
+    local system. Instead, you want the clicked PDF files to be displayed within the browser window directly, without 
+    prompting the user to save the file locally. What should you do?
+
+- Enable Cloud CDN on the website frontend.
+
+- Enable 'Share publicly' on the PDF file objects.
+
+- Set Content-Type metadata to application/pdf on the PDF file objects. **_Most Voted_**
+
+- Add a label to the storage bucket with a key of Content-Type and value of application/pdf.
+
+
+50. You have a virtual machine that is currently configured with 2 vCPUs and 4 GB of memory. It is running out of 
+    memory. You want to upgrade the virtual machine to have 8 GB of memory. What should you do?
+
+- Rely on live migration to move the workload to a machine with more memory.
+
+- Use gcloud to add metadata to the VM. Set the key to required-memory-size and the value to 8 GB.
+
+- Stop the VM, change the machine type to n1-standard-8, and start the VM.
+
+- Stop the VM, increase the memory to 8 GB, and start the VM. **_Most Voted_**
+
+
+51. You have production and test workloads that you want to deploy on Compute Engine. Production VMs need to be in a 
+    different subnet than the test VMs. All the VMs must be able to reach each other over Internal IP without creating 
+    additional routes. You need to set up VPC and the 2 subnets. Which configuration meets these requirements?
+
+- Create a single custom VPC with 2 subnets. Create each subnet in a different region and with a different CIDR range. **_Most Voted_**
+
+- Create a single custom VPC with 2 subnets. Create each subnet in the same region and with the same CIDR range.
+
+- Create 2 custom VPCs, each with a single subnet. Create each subnet in a different region and with a different CIDR range.
+
+- Create 2 custom VPCs, each with a single subnet. Create each subnet in the same region and with the same CIDR range.
+
+
+52. You need to create an autoscaling managed instance group for an HTTPS web application. You want to make sure that 
+    unhealthy VMs are recreated. What should you do?
+
+- Create a health check on port 443 and use that when creating the Managed Instance Group. **_Most Voted_**
+
+- Select Multi-Zone instead of Single-Zone when creating the Managed Instance Group.
+
+- In the Instance Template, add the label 'health-check'.
+
+- In the Instance Template, add a startup script that sends a heartbeat to the metadata server.
+
+
+53. Your company has a Google Cloud Platform project that uses BigQuery for data warehousing. Your data science team 
+    changes frequently and has few members. You need to allow members of this team to perform queries. You want to 
+    follow Google-recommended practices. What should you do?
+
+- Create an IAM entry for each data scientist's user account. 2. Assign the BigQuery jobUser role to the group.
+
+- Create an IAM entry for each data scientist's user account. 2. Assign the BigQuery dataViewer user role to the group.
+
+- Create a dedicated Google group in Cloud Identity. 2. Add each data scientist's user account to the group. 3. Assign 
+  the BigQuery jobUser role to the group. **_Most Voted_**
+
+- Create a dedicated Google group in Cloud Identity. 2. Add each data scientist's user account to the group. 3. Assign 
+  the BigQuery dataViewer user role to the group.
+
+
+54. 

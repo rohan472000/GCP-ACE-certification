@@ -6,7 +6,7 @@
 
 - Basic Scaling with max_instances set to 3.
 
-- Automatic Scaling with min_idle_instances set to 3. _**Most Voted**_
+- Automatic Scaling with min_idle_instances set to 3. _**Correct Option**_
 
 
 10. You have a development project with appropriate IAM roles defined. You are creating a production project and want to have the same IAM roles on the new project, using the fewest possible steps. What should you do?

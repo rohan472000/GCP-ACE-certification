@@ -1,31 +1,23 @@
 # Google Cloud Platform - Associate Cloud Engineer Certification Guide [[Link]](https://github.com/rohan472000/GCP-ACE-certification)
 
 
-This guide provides an overview of the topics covered in the Google Cloud Platform (GCP) Associate Cloud Engineer Certification exam, 
-along with relevant resources and sample questions to help you prepare for the exam.
+Welcome to the Google Cloud Platform (GCP) Associate Cloud Engineer Certification Guide. This guide provides a
+comprehensive overview of the topics covered in the GCP Associate Cloud Engineer Certification exam, along with relevant
+resources and sample questions to help you prepare for the exam and ace it with flying colors!
 
-## Exam Overview
-
-The GCP Associate Cloud Engineer Certification exam tests your ability to deploy and manage GCP services and infrastructure, 
-including virtual machines, Kubernetes clusters, storage solutions, and more.
-
-The exam consists of multiple choice and multiple select questions and lasts for 2 hours. To pass the exam, you must earn a score of 70% or higher.
+The exam consists of multiple choice and multiple select questions and lasts for 2 hours. To pass the exam, you must 
+earn a score of 70% or higher.
 
 # Exam Topics
 
 The exam covers the following topics:
 
-- Managing Compute Engine resources
-- Managing Google Kubernetes Engine resources
-- Managing Cloud Run resources
-- Managing storage and database solutions
-- Managing networking resources
-- Monitoring and logging
-- Managing identity and access management (IAM)
-- Managing service accounts
-- Viewing audit logs
+- Configuring_access_and_security
+- Deploying_implementing_cloud_solution
+- Ensuring_successful_operation_of_a_cloud_solution
+- Planning_configuring_a_cloud_solution
+- Setting_up_cloud_solution_environment
 
-more...............
 
 For each topic, this guide provides a brief overview of the tasks involved and relevant resources to help you prepare.
 
@@ -50,4 +42,4 @@ Contributions to this guide are welcome! If you have any suggestions or correcti
 
 ## Disclaimer
 
-This guide is not affiliated with or endorsed by Google. All trademarks and registered trademarks are the property of **@rohan472000(Rohan Anand)**.
+This guide is not affiliated with or endorsed by Google.

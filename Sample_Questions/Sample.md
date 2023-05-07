@@ -529,4 +529,79 @@ What should you do?
   the BigQuery dataViewer user role to the group.
 
 
-54. 
+54. You are given a project with a single Virtual Private Cloud (VPC) and a single subnetwork in the us-central1 region.
+    There is a Compute Engine instance hosting an application in this subnetwork. You need to deploy a new instance in 
+    the same project in the europe-west1 region. This new instance needs access to the application. You want to follow 
+    Google-recommended practices. What should you do?
+
+-   1.Create a subnetwork in the same VPC, in europe-west1. 2. Create the new instance in the new subnetwork and use the 
+    first instance's private address as the endpoint. **_Most Voted_**
+
+-   1.Create a VPC and a subnetwork in europe-west1. 2. Expose the application with an internal load balancer. 3. Create 
+    the new instance in the new subnetwork and use the load balancer's address as the endpoint.
+
+-   1.Create a subnetwork in the same VPC, in europe-west1. 2. Use Cloud VPN to connect the two subnetworks. 3. Create
+    the new instance in the new subnetwork and use the first instance's private address as the endpoint.
+
+-   1.Create a VPC and a subnetwork in europe-west1. 2. Peer the 2 VPCs. 3. Create the new instance in the new subnetwork
+    and use the first instance's private address as the endpoint.
+
+
+55. Your projects incurred more costs than you expected last month. Your research reveals that a development GKE 
+    container emitted a huge number of logs, which resulted in higher costs. You want to disable the logs quickly using 
+    the minimum number of steps. What should you do?
+
+-  1.Go to the Logs ingestion window in Stackdriver Logging, and disable the log source for the GKE container resource. **_Most Voted_**
+
+-  1.Go to the Logs ingestion window in Stackdriver Logging, and disable the log source for the GKE Cluster Operations 
+   resource.
+
+-  1.Go to the GKE console, and delete existing clusters. 2. Recreate a new cluster. 3. Clear the option to enable 
+   legacy Stackdriver Logging.
+
+-  1.Go to the GKE console, and delete existing clusters. 2. Recreate a new cluster. 3. Clear the option to enable 
+   legacy Stackdriver Monitoring.
+
+
+56. You have a website hosted on App Engine standard environment. You want 1% of your users to see a new test version of
+    the website. You want to minimize complexity. What should you do?
+
+- Deploy the new version in the same application and use the --migrate option.
+
+- Deploy the new version in the same application and use the --splits option to give a weight of 99 to the current 
+  version and a weight of 1 to the new version. _**Most Voted_**
+
+- Create a new App Engine application in the same project. Deploy the new version in that application. Use the App 
+   Engine library to proxy 1% of the requests to the new version.
+
+- Create a new App Engine application in the same project. Deploy the new version in that application. Configure your 
+  network load balancer to send 1% of the traffic to that new application.
+
+
+57. You have a web application deployed as a managed instance group. You have a new version of the application to 
+    gradually deploy. Your web application is currently receiving live web traffic. You want to ensure that the available 
+    capacity does not decrease during the deployment. What should you do?
+
+- Perform a rolling-action start-update with maxSurge set to 0 and maxUnavailable set to 1.
+
+- Perform a rolling-action start-update with maxSurge set to 1 and maxUnavailable set to 0. **_Most Voted_**
+
+- Create a new managed instance group with an updated instance template. Add the group to the backend service for the 
+   load balancer. When all instances in the new managed instance group are healthy, delete the old managed instance group.
+
+- Create a new instance template with the new application version. Update the existing managed instance group with the
+  new instance template. Delete the instances in the managed instance group to allow the managed instance group to
+  recreate the instance using the new instance template.
+
+
+58. You are building an application that stores relational data from users. Users across the globe will use this 
+    application. Your CTO is concerned about the scaling requirements because the size of the user base is unknown. 
+    You need to implement a database solution that can scale with your user growth with minimum configuration changes. Which storage solution should you use?
+
+- Cloud SQL
+
+- Cloud Spanner **_Most Voted_**
+
+- Cloud Firestore
+
+- Cloud Datastore

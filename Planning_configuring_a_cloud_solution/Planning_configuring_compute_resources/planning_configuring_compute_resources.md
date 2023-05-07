@@ -37,4 +37,4 @@ API or the gcloud command-line tool:
 gcloud compute machine-types create [MACHINE_TYPE_NAME] --custom-vm-cpu [CPU_COUNT] --custom-vm-memory [MEMORY_SIZE]
 ```
 Replace [MACHINE_TYPE_NAME] with a name for the custom machine type, [CPU_COUNT] with the number of vCPUs, and [MEMORY_SIZE] with 
-the amount of memory in MB.
+the amount of memory in MB .
